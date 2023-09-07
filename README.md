@@ -18,25 +18,25 @@ yarn add cantonese-romanisation
 
 __getRoman__
 ```ts
-// @return: Returns possible Cantonese romanisation for each Chinese character in the input string
+// @return: possible Cantonese romanisation for each Chinese character in the input string
 getRoman( input: string ): Array<string[]>
 ```
 
 __getLshk__
 ```ts
-// @return: Returns possible Cantonese LSHK Pinyin for each Chinese character in the input string
+// @return: possible Cantonese LSHK Pinyin for each Chinese character in the input string
 getLshk( input: string ): Array<string[]>
 ```
 
 __getYale__
 ```ts
-// @return: Returns possible Yale Pinyin for each Chinese character in the input string
+// @return: possible Yale Pinyin for each Chinese character in the input string
 getYale( input: string ): Array<string[]>
 ```
 
 __pingyam__
 ```ts
-// @return: Returns possible Chinese character for each pinyin in the input string
+// @return: possible Chinese character for each pinyin in the input string
 pingyam( input: string, system: "roman" | "lshk" | "yale" ): Array<string[]>
 ```
 

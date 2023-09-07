@@ -1,0 +1,49 @@
+{
+  "name": "cantonese-romanisation",
+  "version": "1.0.0",
+  "description": "Library for mapping Chinese character to Hong Kong Government Cantonese Romanisation, Pingyam (Yale or LSHK)",
+  "main": "dist/index.js",
+  "module": "esm/index.js",
+  "files": [
+    "dist",
+    "esm",
+    "src"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "yarn clean",
+    "test": "jest",
+    "build:esm": "tsc --target es2018 --outDir esm",
+    "build:cjs": "tsc --target es2015 --module commonjs --outDir dist",
+    "build": "yarn build:cjs && yarn build:esm"
+  },
+  "keywords": [
+    "cantonese",
+    "pingyam",
+    "pingyum",
+    "pinyin",
+    "chinese",
+    "roman",
+    "yale",
+    "lshk",
+    "Hong Kong Government Cantonese Romanisation",
+    "romanisation"
+  ],
+  "author": "chunlaw",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.4",
+    "jest": "^29.6.4",
+    "rimraf": "^5.0.1",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chunlaw/cantonese-romanisation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chunlaw/cantonese-romanisation/issues"
+  },
+  "homepage": "https://cantonese-romanisation.chunlaw.io"
+}

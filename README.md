@@ -5,6 +5,8 @@ Cantonese romanization based on [Hong Kong Government Romanisation](https://zh.w
 
 The pacakage also provides features of  [pinyin](https://zh.wikipedia.org/zh-tw/%E6%B1%89%E8%AF%AD%E6%8B%BC%E9%9F%B3) supporting the standards of [LSHK](https://lshk.org/) and [Yale](https://zh.wikipedia.org/wiki/%E8%80%B6%E9%AD%AF%E6%8B%BC%E9%9F%B3#%E7%B2%A4%E8%AF%AD%E8%80%B6%E9%B2%81%E6%8B%BC%E9%9F%B3).
 
+Demo is available [here](https://cantonese-romanisation.chunlaw.io/)
+
 ## Install
 ```
 npm install cantonese-romanisation

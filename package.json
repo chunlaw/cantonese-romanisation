@@ -1,6 +1,6 @@
 {
   "name": "cantonese-romanisation",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Library for mapping Chinese character to Hong Kong Government Cantonese Romanisation, Pingyam (Yale or LSHK)",
   "main": "dist/index.js",
   "module": "esm/index.js",

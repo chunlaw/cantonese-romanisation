@@ -1,16 +1,28 @@
 import "./App.css";
-import Content from "./layouts/Content";
 import { Container, SxProps, Theme } from "@mui/material";
 import Header from "./layouts/Header";
 import Footer from "./layouts/Footer";
+import Home from "./layouts/Home";
+import Doc from "./layouts/Doc";
+import { Outlet, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Container maxWidth="lg" fixed sx={rootSx}>
-      <Header />
-      <Content />
-      <Footer />
-    </Container>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <Container maxWidth="lg" fixed sx={rootSx}>
+            <Header />
+            <Outlet />
+            <Footer />
+          </Container>
+        }
+      >
+        <Route path="/" element={<Home />} />
+        <Route path="/doc" element={<Doc />} />
+      </Route>
+    </Routes>
   );
 }
 

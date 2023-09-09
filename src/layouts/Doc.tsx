@@ -15,7 +15,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { getRoman, getLshk, getYale, pingyam } from "cantonese-romanisation";
 import { useCallback, useState } from "react";
 
-interface ContentState {
+interface DocState {
   roman: string;
   yale: string;
   lshk: string;
@@ -23,18 +23,44 @@ interface ContentState {
   system: "roman" | "lshk" | "yale";
 }
 
-const Content = () => {
-  const [state, setState] = useState<ContentState>(DEFAULT_STATE);
+const Doc = () => {
+  const [state, setState] = useState<DocState>(DEFAULT_STATE);
 
-  const handleChange = useCallback((field: keyof ContentState, v: string) => {
+  const handleChange = useCallback((field: keyof DocState, v: string) => {
     setState((prev) => ({
       ...prev,
       [field]: v,
     }));
   }, []);
 
+  const alwaysExpanded = true;
+
   return (
     <Box sx={rootSx}>
+      <Accordion expanded={alwaysExpanded}>
+        <AccordionSummary sx={accordionSummarySx}>
+          <Typography variant="h6">Installation</Typography>
+          <Typography variant="body1">
+            <i>cantonese-romanisation</i>
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails sx={detailSx}>
+          <Box sx={{ flex: 1 }}>
+            <SyntaxHighlighter
+              language="bash"
+              lineProps={{
+                style: { wordBreak: "break-all", whiteSpace: "pre-wrap" },
+              }}
+              wrapLines={true}
+            >
+              {
+                "npm install cantonese-romanisation\n\n# or\n\nyarn add cantonese-romanisation"
+              }
+            </SyntaxHighlighter>
+          </Box>
+        </AccordionDetails>
+      </Accordion>
+
       <Accordion defaultExpanded>
         <AccordionSummary sx={accordionSummarySx}>
           <Typography variant="h6">
@@ -217,13 +243,13 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default Doc;
 
 const rootSx: SxProps<Theme> = {
   display: "flex",
   flexDirection: "column",
-  width: "100%",
   flex: 1,
+  width: "100%",
   overflow: "scroll",
 };
 
@@ -267,7 +293,7 @@ const accordionSummarySx: SxProps<Theme> = {
   },
 };
 
-const DEFAULT_STATE: ContentState = {
+const DEFAULT_STATE: DocState = {
   roman: "梁國雄",
   lshk: "吳靄儀",
   yale: "黎智英",

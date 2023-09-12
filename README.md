@@ -10,7 +10,7 @@ The pacakage also provides features of  [pinyin](https://zh.wikipedia.org/zh-tw/
 Demo is available [here](https://cantonese-romanisation.chunlaw.io/).
 
 ## Install
-```
+```bash
 pip install cantonese-romanisation
 ```
 

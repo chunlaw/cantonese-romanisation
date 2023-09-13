@@ -7,6 +7,8 @@ The pacakage also provides features of  [pinyin](https://zh.wikipedia.org/zh-tw/
 
 Demo is available [here](https://cantonese-romanisation.chunlaw.io/).
 
+A Python version package is available [here](https://pypi.org/project/cantonese-romanisation/) and the source code is available [here](https://github.com/chunlaw/cantonese-romanisation/tree/pypi).
+
 ## Install
 ```
 npm install cantonese-romanisation

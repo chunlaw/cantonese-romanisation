@@ -7,6 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import { GitHub as GitHubIcon, Info as InfoIcon } from "@mui/icons-material";
+import pypiLogo from "../assets/pypi.svg";
 import npmLogo from "../assets/npm.svg";
 import { useNavigate } from "react-router-dom";
 
@@ -41,6 +42,17 @@ const Header = () => {
           size="small"
         >
           <GitHubIcon />
+        </IconButton>
+        <IconButton
+          onClick={() => {
+            window.open(
+              "https://pypi.org/project/cantonese-romanisation/",
+              "_blank",
+            );
+          }}
+          size="small"
+        >
+          <img src={pypiLogo} width={24} height={24} alt="Pypi logo" />
         </IconButton>
         <IconButton
           onClick={() => {

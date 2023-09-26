@@ -830,10 +830,10 @@ callsites@^3.0.0:
   resolved "https://registry.yarnpkg.com/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
   integrity sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==
 
-cantonese-romanisation@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/cantonese-romanisation/-/cantonese-romanisation-1.0.1.tgz#5470a9b2b606fcd601d7e5525d064d107a738f05"
-  integrity sha512-dE7Li8RSIrNKASH2M07hd2jxfyVe+GqtXpZZQKYkn7wZA6+4qG199HSu95B0T+Vc6TsWEVLOiON80Sxr2e/myw==
+cantonese-romanisation@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/cantonese-romanisation/-/cantonese-romanisation-1.0.6.tgz#cdd9dfef6cdcf802c6d613d32979aba46393e305"
+  integrity sha512-1WoRVY5wEsokjrwU7O2LiUDbii4nwxUCnbdJvgeEbMoUOx2W+YTV5XkpypQ22Wj/U4iqagtcpPVmks1n0ddrqg==
 
 chalk@^2.4.2:
   version "2.4.2"

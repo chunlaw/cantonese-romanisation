@@ -1,3 +1,4 @@
 node_modules
 dist
 esm
+.DS_Store
